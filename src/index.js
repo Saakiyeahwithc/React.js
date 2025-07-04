@@ -31,6 +31,19 @@ const Footer = () => {
   );
 
   useEffect(() => {
+    // Check store hours only once when component mounts
+    const hour = new Date().getHours();
+    const openhours = 12;
+    const closehours = 22;
+    const isOpen = hour >= openhours && hour < closehours;
+
+    if (isOpen) {
+      alert("The store is open now.");
+    } else {
+      alert("The store is closed now.");
+    }
+
+    // Set up timer for timestamp updates
     const timer = setInterval(() => {
       setCurrentTime(new Date().toLocaleTimeString());
     }, 1000);
@@ -49,8 +62,4 @@ const Tour = () => {
 };
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+root.render(<App />);
