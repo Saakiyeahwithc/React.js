@@ -1,0 +1,49 @@
+.header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+.main {
+  padding: 20px;
+}
+.tourWrapper {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+.tourWrapper img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.tourBottom {
+  padding: 10px;
+}
+.tourBottom h2 {
+  margin: 0;
+  font-size: 1.5em;
+}
+.tourBottom p {
+  color: #555;
+}
+.footer {
+  background-color: #282c34;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: sticky;
+  width: 100%;
+  bottom: 0;
+}
+.order {
+  background-color: #282c34;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.grey {
+  color: grey;
+}
